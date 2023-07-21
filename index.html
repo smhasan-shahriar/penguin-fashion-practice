@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header>
+  <body class="font-roboto text-[#3E3E3E]">
+    <header class="bg-[#FFFBF0]">
       <nav class="flex items-center justify-between px-44 py-10">
         <div>
           <svg
@@ -792,11 +809,11 @@
               </clipPath>
             </defs>
           </svg>
-          <h3 class="font-bold inline text-2xl text-[#363958]">
+          <h3 class="font-bold inline text-2xl text-[#363958] font-montserrat">
             <span class="text-[#A4BC46]">Penguin</span>Fashion
           </h3>
         </div>
-        <ul class="flex gap-5">
+        <ul class="flex gap-20 font-roboto font-medium">
           <li><a href="">Home</a></li>
           <li><a href="">Product</a></li>
           <li><a href="">About us</a></li>
@@ -804,24 +821,42 @@
         </ul>
       </nav>
       <!-- banner content -->
-      <div>
+      <div class="flex px-44 items-center pb-32 justify-between">
         <!-- banner text -->
-        <div>
-          <h1>
-            Be the Penguins <br />
+        <div class="w-1/2">
+          <h1 class="font-bebas text-[80px] leading-tight">
+            <span class="text-[#FABE4C]">Be the Penguins </span><br />
             of Winter
           </h1>
-          <p>
+          <p class="max-w-[360px] my-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <button>
-            </svg
-            >Buy Now
+          <button
+            class="font-medium px-8 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="inline w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+
+            Buy Now
           </button>
         </div>
         <!-- banner image -->
-        <div></div>
+        <div class="w-1/2">
+          <img class="w-3/4" src="images/model.png" alt="" />
+        </div>
       </div>
     </header>
     <main></main>
