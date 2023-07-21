@@ -25,7 +25,7 @@
   </head>
   <body class="font-roboto text-[#3E3E3E]">
     <header class="bg-[#FFFBF0]">
-      <nav class="flex items-center justify-between px-44 py-10">
+      <nav class="flex items-center justify-between lg:px-44 py-10 flex-col lg:flex-row gap-5">
         <div>
           <svg
             class="inline"
@@ -813,7 +813,7 @@
             <span class="text-[#A4BC46]">Penguin</span>Fashion
           </h3>
         </div>
-        <ul class="flex gap-20 font-roboto font-medium">
+        <ul class="flex flex-col lg:flex-row gap-5  lg:gap-10 font-roboto font-medium items-center">
           <li><a href="">Home</a></li>
           <li><a href="">Product</a></li>
           <li><a href="">About us</a></li>
@@ -821,10 +821,10 @@
         </ul>
       </nav>
       <!-- banner content -->
-      <div class="flex px-44 items-center pb-32 justify-between">
+      <div class="flex flex-col lg:flex-row gap-10 px-8 lg:px-44 items-center pb-32 justify-between text-center">
         <!-- banner text -->
-        <div class="w-1/2">
-          <h1 class="font-bebas text-[80px] leading-tight">
+        <div class="w-full lg:w-1/2 flex flex-col items-center">
+          <h1 class="font-bebas text-6xl lg:text-[80px] leading-tight">
             <span class="text-[#FABE4C]">Be the Penguins </span><br />
             of Winter
           </h1>
@@ -854,8 +854,8 @@
           </button>
         </div>
         <!-- banner image -->
-        <div class="w-1/2">
-          <img class="w-3/4" src="images/model.png" alt="" />
+        <div class="w-full lg:w-1/2">
+          <img class="w-full lg:w-3/4" src="images/model.png" alt="" />
         </div>
       </div>
     </header>
